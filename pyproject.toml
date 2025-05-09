@@ -1,0 +1,36 @@
+[project]
+name = "lobster-assessment"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "youssefGha98", email = "youssef@nomiks.io" }
+]
+dependencies = [
+    "pandas>=2.2.3",
+    "sqlalchemy>=2.0.40",
+    "psycopg>=3.2.7",
+    "python-dotenv>=1.1.0",
+    "pydantic>=2.11.4",
+    "pytest>=8.3.5",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "ruff>=0.11.8",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lobster_assessment"]
+
+[tool.rye.scripts]
+main = "python -m lobster_assessment.main"

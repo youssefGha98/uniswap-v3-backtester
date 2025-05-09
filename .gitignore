@@ -1,0 +1,68 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+
+# Virtual environment
+.venv/
+env/
+venv/
+ENV/
+
+# VSCode settings
+.vscode/
+
+# Test cache
+.pytest_cache/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Poetry / Pip / Rye
+poetry.lock
+poetry.toml
+requirements*.lock
+.pdm.toml
+.rye/
+
+# Python version file
+.python-version
+
+# Compiled output
+*.out
+*.log
+*.tmp
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# PyInstaller / build
+build/
+dist/
+*.spec
+
+# MyPy / Pyright
+.mypy_cache/
+.pyright/
+
+# Coverage
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+.cache
+
+# Editable installs
+*.egg-info/
+*.egg
+
+# Logs
+*.log
+
+# IDEs / editors
+.idea/
+*.sublime-workspace
+*.sublime-project
